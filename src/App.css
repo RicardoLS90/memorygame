@@ -1,0 +1,68 @@
+#root {
+ 
+  margin: 0 auto;
+ 
+  text-align: center;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+  width: 100%;
+  height: 100vh;
+}
+
+.icon-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 40vh;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: darkturquoise;
+  height: 10vh;
+  border-radius: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4vh;
+}
+
+.card:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.card.down {
+  background: darkmagenta;
+}
+
+.card.up {
+  background: darkorange;
+}
+
+.card.selected {
+  background: darkolivegreen;
+}
